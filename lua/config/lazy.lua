@@ -25,6 +25,10 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		{'morhetz/gruvbox', config = function() vim.cmd.colorscheme "gruvbox" end},
-		{ import = "config.plugins" }
-  	},
+		{ import = "config.plugins" },
+  	    	{ import = "config.plugins.lsp" },
+            { import = "config.plugins.filebrowsing" },
+    },
 })
+
+
