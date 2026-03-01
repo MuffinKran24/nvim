@@ -11,6 +11,8 @@ vim.opt.cursorline = true
 vim.opt.cursorcolumn = false
 vim.opt.expandtab = true
 vim.opt.termguicolors = true
+vim.opt.autoindent = true
+vim.opt.signcolumn = "yes"
 
 vim.g.rust_recommended_style = false -- prevent rust from fucking up the rest of the config
 

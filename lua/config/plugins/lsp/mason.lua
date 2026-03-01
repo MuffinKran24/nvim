@@ -6,7 +6,7 @@ return {
                 "lua_ls",
                 "pyright",
                 "html",
-
+                "rust_analyzer",
             },
         },
     dependencies = {
