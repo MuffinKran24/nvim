@@ -6,7 +6,8 @@ return {
                 enable_line_number = false,
                 show_time          = true,
                 main_image         = "neovim",
-                --workspace_text     = "Coding",
+                workspace_text     = "Coding",
+                editing_text       = "",
             })
 	    end
 	}
