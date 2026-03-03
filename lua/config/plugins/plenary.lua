@@ -1,7 +1,5 @@
 return {
-	{	
-		'nvim-lua/plenary.nvim',
-		config = function()
-		end
-	}
+	'nvim-lua/plenary.nvim',
+	config = function()
+	end
 }
