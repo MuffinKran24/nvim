@@ -1,27 +1,27 @@
 return {
-    "williamboman/mason-lspconfig.nvim",
+  "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = {
+        "clangd",
+        "lua_ls",
+        "pyright",
+        "html",
+        "rust_analyzer",
+      },
+    },
+  dependencies = {
+    {
+      "williamboman/mason.nvim",
         opts = {
-            ensure_installed = {
-                "clangd",
-                "lua_ls",
-                "pyright",
-                "html",
-                "rust_analyzer",
+          ui = {
+            icons = {
+              package_installed = "",
+              package_pending = "",
+              package_uninstalled = "❌",
             },
+          },
         },
-    dependencies = {
-        {
-            "williamboman/mason.nvim",
-            opts = {
-                ui = {
-                    icons = {
-                        package_installed = "",
-                        package_pending = "",
-                        package_uninstalled = "❌",
-                    },
-                },
-            },
-        },
-        "neovim/nvim-lspconfig"
-    }
+    },
+    "neovim/nvim-lspconfig"
+  }
 }
