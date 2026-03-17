@@ -7,6 +7,7 @@ return {
         "pyright",
         "html",
         "rust_analyzer",
+        "vimls",
       },
     },
   dependencies = {
