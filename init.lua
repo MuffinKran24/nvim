@@ -31,3 +31,10 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle File Tree' })
 vim.keymap.set('n', '<leader>r', '<cmd>NvimTreeFocus<CR>', { desc = 'Focus File Tree' })
+
+
+vim.filetype.add({
+  extension = {
+    ino = 'cpp',
+  },
+})
