@@ -1,7 +1,9 @@
-my neovim config using lazy.nvim
+# my neovim config using lazy.nvim
 
-features:
+##### features:
 - lsp (sometimes)
 - fuzzy finder & file browser (nvim-tree & telescope)
-- gruvbox (verry cool)
+- gruvbox (very cool)
 - discord presence to show everyone that you use neovim
+- statusline
+- toggleable terminal

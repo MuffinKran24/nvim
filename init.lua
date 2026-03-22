@@ -32,6 +32,12 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle File Tree' })
 vim.keymap.set('n', '<leader>r', '<cmd>NvimTreeFocus<CR>', { desc = 'Focus File Tree' })
 
+-- Tabs
+
+vim.keymap.set('n', '<C-t>', '<cmd>tabnew<CR>', { desc = 'New Tab' })
+vim.keymap.set('n', '<C-d>', '<cmd>tabnext<CR>', { desc = 'Next Tab' })
+vim.keymap.set('n', '<C-a>', '<cmd>tabprevious<CR>', { desc = 'Previous Tab' })
+vim.keymap.set('n', '<C-w>', '<cmd>tabclose<CR>', { desc = 'Close Tab' })
 
 vim.filetype.add({
   extension = {
