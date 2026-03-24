@@ -7,3 +7,4 @@
 - discord presence to show everyone that you use neovim
 - statusline
 - toggleable terminal
+- epic start menu
