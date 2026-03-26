@@ -5,22 +5,32 @@ require("config.lsp")
 
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
 vim.opt.cursorline = true
-vim.opt.cursorcolumn = false
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
-vim.opt.termguicolors = true
 vim.opt.autoindent = true
+
+vim.opt.termguicolors = true
+vim.opt.background = "dark"
 vim.opt.signcolumn = "yes"
+
+vim.opt.swapfile = false
+
+vim.opt.backspace = "indent,eol,start"
 
 vim.g.rust_recommended_style = false -- prevent rust from fucking up the rest of the config
 
+vim.opt.clipboard:append("unnamedplus") -- use system clipboard
+
 -- Keybinds
 
-local builtin = require('telescope.builtin')
-
 -- Telescope
+
+local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Find Files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
