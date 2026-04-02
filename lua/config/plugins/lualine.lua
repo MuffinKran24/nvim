@@ -5,7 +5,7 @@ return {
     local lualine = require("lualine")
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
-    local colors = {
+    local gruvbox = {
       blue = "#458588",
       green = "#98971a",
       violet = "#b16286",
@@ -15,6 +15,19 @@ return {
       bg = "#282828",
       inactive_bg = "#3c3836",
     }
+
+    local catppuccin = {
+      blue = "#89b4fa",
+      green = "#a6e3a1",
+      violet = "#cba6f7",
+      yellow = "#f9e2af",
+      red = "#f38ba8",
+      fg = "#cdd6f4",
+      bg = "#1e1e2e",
+      inactive_bg = "#11111b",
+    }
+
+    local colors = catppuccin
 
     local my_lualine_theme = {
       normal = {
