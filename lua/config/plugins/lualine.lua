@@ -30,7 +30,7 @@ return {
     local themery = require("themery")
 	  local currentTheme = themery.getCurrentTheme()
 
-    local colors = gruvbox
+    local colors = gruvbox -- fallback because gruvbox is cool
 
     if currentTheme and currentTheme.name == "gruvbox" then
       colors = gruvbox

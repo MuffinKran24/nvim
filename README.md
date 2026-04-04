@@ -8,3 +8,5 @@
 - statusline
 - toggleable terminal
 - epic start menu (credits to user 'timteeee' on github)
+
+#### you need a nerd font for some things to render correctly
