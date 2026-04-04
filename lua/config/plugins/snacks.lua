@@ -41,6 +41,7 @@ return {
                     { icon = " ", key = "m", desc = "Mason", action = ":Mason", enabled = package.loaded.lazy ~= nil },
                     { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
                     { icon = " ", key = "h", desc = "Health", action = ":checkhealth" },
+                    { icon = " ", key = "t", desc = "Themes", action = ":Themery" },
                     { icon = " ", key = "c", desc = "Config", action = ":cd /home/der_finn/.config/nvim | :e ." },
                     { icon = " ", key = "q", desc = "Quit", action = ":qa" },
                 },

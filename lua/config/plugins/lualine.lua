@@ -27,7 +27,16 @@ return {
       inactive_bg = "#11111b",
     }
 
-    local colors = catppuccin
+    local themery = require("themery")
+	  local currentTheme = themery.getCurrentTheme()
+
+    local colors = gruvbox
+
+    if currentTheme and currentTheme.name == "gruvbox" then
+      colors = gruvbox
+    elseif currentTheme and currentTheme.name == "catppuccin" then
+      colors = catppuccin
+    end
 
     local my_lualine_theme = {
       normal = {
@@ -56,9 +65,9 @@ return {
         c = { bg = colors.bg, fg = colors.fg },
       },
       inactive = {
-        a = { bg = colors.inactive_bg, fg = colors.semilightgray, gui = "bold" },
-        b = { bg = colors.inactive_bg, fg = colors.semilightgray },
-        c = { bg = colors.inactive_bg, fg = colors.semilightgray },
+        a = { bg = colors.inactive_bg, fg = colors.fg, gui = "bold" },
+        b = { bg = colors.inactive_bg, fg = colors.fg },
+        c = { bg = colors.inactive_bg, fg = colors.fg },
       },
     }
 
