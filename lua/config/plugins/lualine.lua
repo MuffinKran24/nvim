@@ -6,11 +6,11 @@ return {
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
     local gruvbox = {
-      blue = "#458588",
-      green = "#98971a",
-      violet = "#b16286",
-      yellow = "#d79921",
-      red = "#cc241d",
+      blue = "#83a598",
+      green = "#b8bb26",
+      violet = "#d3869b",
+      yellow = "#fabd2f",
+      red = "#fb4934",
       fg = "#ebdbb2",
       bg = "#282828",
       inactive_bg = "#3c3836",
