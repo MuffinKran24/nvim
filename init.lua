@@ -1,10 +1,10 @@
 require("config.lazy")
 require("config.lsp")
 
--- Basic options
+----- Basic options -----
 
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.cursorline = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -12,10 +12,9 @@ vim.opt.smartcase = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
-vim.opt.autoindent = true
+vim.opt.autoindent = false
 
 vim.opt.termguicolors = true
-vim.opt.background = "dark"
 vim.opt.signcolumn = "yes"
 
 vim.opt.swapfile = false
@@ -26,7 +25,7 @@ vim.g.rust_recommended_style = false -- prevent rust from fucking up the rest of
 
 vim.opt.clipboard:append("unnamedplus") -- use system clipboard
 
--- Keybinds
+----- Keybinds -----
 
 -- Telescope
 

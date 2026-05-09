@@ -5,7 +5,7 @@ return {
     local lualine = require("lualine")
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
-    local gruvbox = {
+    local gruvbox_dark = {
       blue = "#83a598",
       green = "#b8bb26",
       violet = "#d3869b",
@@ -16,7 +16,51 @@ return {
       inactive_bg = "#3c3836",
     }
 
-    local catppuccin = {
+    local gruvbox_light = {
+      blue = "#076678",
+      green = "#79740e",
+      violet = "#8f3f71",
+      yellow = "#b57614",
+      red = "#9d0006",
+      fg = "#3c3836",
+      bg = "#fbf1c7",
+      inactive_bg = "#ebdbb2",
+    }
+
+    local catppuccin_latte = {
+      blue = "#1e66f5",
+      green = "#40a02b",
+      violet = "#8839ef",
+      yellow = "#df8e1d",
+      red = "#d20f39",
+      fg = "#4c4f69",
+      bg = "#eff1f5",
+      inactive_bg = "#dce0e8",
+    }
+
+    local catppuccin_frappe = {
+      blue = "#8caaee",
+      green = "#a6d189",
+      violet = "#ca9ee6",
+      yellow = "#e5c890",
+      red = "#e78284",
+      fg = "#c6d0f5",
+      bg = "#303446",
+      inactive_bg = "#232634",
+    }
+
+    local catppuccin_macchiato = {
+      blue = "#8aadf4",
+      green = "#a6da95",
+      violet = "#c6a0f6", --mauve
+      yellow = "#eed49f",
+      red = "#ed8796",
+      fg = "#cad3f5",
+      bg = "#24273a",
+      inactive_bg = "#181926",
+    }
+
+    local catppuccin_mocha = {
       blue = "#89b4fa",
       green = "#a6e3a1",
       violet = "#cba6f7",
@@ -29,13 +73,20 @@ return {
 
     local themery = require("themery")
 	  local currentTheme = themery.getCurrentTheme()
+    local colors = gruvbox_dark -- fallback because gruvbox is cool
 
-    local colors = gruvbox -- fallback because gruvbox is cool
-
-    if currentTheme and currentTheme.name == "gruvbox" then
-      colors = gruvbox
-    elseif currentTheme and currentTheme.name == "catppuccin" then
-      colors = catppuccin
+    if currentTheme.name == "Gruvbox Dark" then
+      colors = gruvbox_dark
+    elseif currentTheme.name == "Gruvbox Light" then
+      colors = gruvbox_light
+    elseif currentTheme.name == "Catppuccin Latte" then
+      colors = catppuccin_latte
+    elseif currentTheme.name == "Catppuccin Frappe" then
+      colors = catppuccin_frappe
+    elseif currentTheme.name == "Catppuccin Macchiato" then
+      colors = catppuccin_macchiato
+    elseif currentTheme.name == "Catppuccin Mocha" then
+      colors = catppuccin_mocha
     end
 
     local my_lualine_theme = {
